@@ -33,10 +33,12 @@
 
 		{ "trigger": "O RLY?\tif-then", "contents": "${1:<expression>}\nO RLY?\n\tYA RLY\n\t\t${2:<code block>}\n\tNO WAI\n\t\t${3:<code block>}\nOIC"},
 		{ "trigger": "WTF?\tswitch", "contents": "${1:VAR}, WTF?\n\tOMG ${2:VAL}\n\t\t${3:<code block>}\n\tOMGWTF\n\t\t${4:<code block>}\nOIC"},
-		{ "trigger": "IM IN YR\tloop", "contents": "IM IN YR ${1:<label>} ${2:UPPIN/NERFIN} YR ${3:<param 1>} AN YR ${4:<param 2>} ${5:TIL/WILE} ${6:<expression>}\n\t${7:<code block>}\nIM OUTTA YR ${1}"},
+		{ "trigger": "IM IN YR\tloop", "contents": "IM IN YR ${1:<label>} ${2:UPPIN/NERFIN} YR ${3:<param 1>} ${4:[AN YR <param 2>]} ${5:TIL/WILE} ${6:<expression>}\n\t${7:<code block>}\nIM OUTTA YR ${1}"},
 		{ "trigger": "HOW IZ I\tfunction", "contents": "HOW IZ I ${1:<function name>} YR ${2:<arg 1>} AN YR ${3:<arg 2>}\n\t${4:<code block>}\nIF U SAY SO"},
 		{ "trigger": "FOUND YR\treturn", "contents": "FOUND YR ${1:VAL}"},
 		{ "trigger": "I IZ\tcall", "contents": "I IZ ${1:<function name>} YR ${2:<param 1>} AN YR ${3:<param 2>} MKAY"},
 
+		{ "trigger": "CAN HAS\timport", "contents": "CAN HAS ${1:<library name>}?"},
+		{ "trigger": "R I IZ\tlibrary assign", "contents": "${1:VAR} R I IZ ${2:<library name>}'Z ${3:<library function>} YR ${4:<param 1>} ${5:[AN YR <param 2>]} MKAY"},
 	]
 }

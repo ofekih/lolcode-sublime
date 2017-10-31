@@ -13,11 +13,33 @@
       <key>increaseIndentPattern</key>
       <string>^.*(HAI [0-9.]+|OBTW(?!.*TLDR)|O RLY\?|YA RLY(?!,)|MEBBE(?!,)|NO WAI(?!,)|WTF\?|OMG|IM IN YR|HOW IZ I).*$</string>
 
-      <key>bracketIndentNextLinePattern</key>
-      <string>(?x)
-      ^ \s* \b(if|while|else)\b [^;]* $
-      | ^ \s* \b(for)\b .* $
-      </string>
+      <key>shellVariables</key>
+      <array>
+         <dict>
+            <key>name</key>
+            <string>TM_COMMENT_START</string>
+            <key>value</key>
+            <string>BTW </string>
+         </dict>
+         <dict>
+            <key>name</key>
+            <string>TM_COMMENT_START_2</string>
+            <key>value</key>
+            <string>OBTW </string>
+         </dict>
+         <dict>
+            <key>name</key>
+            <string>TM_COMMENT_END_2</string>
+            <key>value</key>
+            <string> TLDR</string>
+         </dict>
+         <dict>
+            <key>name</key>
+            <string>TM_COMMENT_DISABLE_INDENT</string>
+            <key>value</key>
+            <string>no</string>
+         </dict>
+      </array>
    </dict>
    <key>uuid</key>
    <string>64598216-d192-4b00-961f-2b1478921c4d</string>

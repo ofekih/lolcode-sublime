@@ -10,7 +10,7 @@ variables:
   value: (?<=\s).+(?=\s+)
   primitives: \b(YARN|NUMBR|NUMBAR|TROOF|BUKKIT|NOOB)\b
   booleans: \b(WIN|FAIL)\b
-  startend: \b(HAI(?= [0-9.]+)|CAN HAS(?=\s+[A-Z]+\s*\?)|KTHXBYE)\b
+  startend: \b(HAI(?= [0-9.]+)|KTHXBYE)\b
   libraries: \b(STDLIB|SOCKS|STDIO|STRING)\b
 
   conditionals: \b(O RLY\?|YA RLY|MEBBE|NO WAI|OIC|MKAY),?(?=\s+)
@@ -34,8 +34,6 @@ variables:
   operators: '{{mathoperators}}|{{booleanoperators}}|{{comparisonoperators}}|{{castingoperators}}|{{concatoperator}}|{{fileoperators}}|{{stringoperators}}|{{socketoperators}}|{{standardoperators}}'
 
   keywords: '{{declaration}}|{{conditionals}}|{{switch}}|{{loops}}|{{functions}}|{{operators}}'
-
-  include: operators
 
 contexts:
   # The prototype context is prepended to all contexts but those setting
@@ -87,6 +85,20 @@ contexts:
       pop: true
 
   imports:
+    - match: \bCAN HAS\b
+      scope: keyword.other.import.lolcode
+      push:
+        - meta_scope: meta.import.lolcode
+        - match: '[A-Z]*'
+          scope: support.class.import.lolcode
+          captures:
+            1: punctuation.accessor.dot.lolcode
+        - match: \?
+          scope: punctuation.terminator.lolcode
+            keyword.control.lolcode
+          pop: true
+        - match: (?=\n)
+          pop: true
     - match: '{{libraries}}'
       scope: support.class.import.lolcode
 
