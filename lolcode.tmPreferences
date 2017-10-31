@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+   <key>name</key>
+   <string>Comments</string>
+   <key>scope</key>
+   <string>source.lol</string>
+   <key>settings</key>
+   <dict>
+      <key>decreaseIndentPattern</key>
+      <string>^\s*(KTHX|TLDR|MEBBE|NO WAI|OMG|OIC|IM OUTTA YR|IF U SAY SO).*$</string>
+      <key>increaseIndentPattern</key>
+      <string>^.*(HAI [0-9.]+|OBTW(?!.*TLDR)|O RLY\?|YA RLY(?!,)|MEBBE(?!,)|NO WAI(?!,)|WTF\?|OMG|IM IN YR|HOW IZ I).*$</string>
+
+      <key>bracketIndentNextLinePattern</key>
+      <string>(?x)
+      ^ \s* \b(if|while|else)\b [^;]* $
+      | ^ \s* \b(for)\b .* $
+      </string>
+   </dict>
+   <key>uuid</key>
+   <string>64598216-d192-4b00-961f-2b1478921c4d</string>
+</dict>
+</plist>

@@ -1,0 +1,42 @@
+{
+	"scope": "source.lol",
+
+	"completions": [
+		{ "trigger": "HAI\tsetup", "contents": "HAI ${1:1.4}\n\t${0:[MA STUFF]}\nKTHXBYE\n" },
+		{ "trigger": "BTW\tcomment", "contents": "BTW ${0:[SHH]}" },
+		{ "trigger": "OBTW\tcomment", "contents": "OBTW ${1:[LOTS OF SHH]} TLDR${0}"},
+		{ "trigger": "I HAS A VAR\tdeclaration", "contents": "I HAS A ${1:VAR}"},
+		{ "trigger": "I HAS A VAR ITZ VAL\tdeclaration", "contents": "I HAS A ${1:VAR} ITZ ${2:VAL}"},
+		{ "trigger": "R\tassign", "contents": "${1:VAR} R ${2:VAL}"},
+
+		{ "trigger": "SUM OF\tmath", "contents": "SUM OF ${1:<x>} AN ${2:<y>}"},
+		{ "trigger": "DIFF OF\tmath", "contents": "DIFF OF ${1:<x>} AN ${2:<y>}"},
+		{ "trigger": "PRODUKT OF\tmath", "contents": "PRODUKT OF ${1:<x>} AN ${2:<y>}"},
+		{ "trigger": "QUOSHUNT OF\tmath", "contents": "QUOSHUNT OF ${1:<x>} AN ${2:<y>}"},
+		{ "trigger": "MOD OF\tmath", "contents": "MOD OF ${1:<x>} AN ${2:<y>}"},
+		{ "trigger": "BIGGR OF\tmath", "contents": "BIGGR OF ${1:<x>} AN ${2:<y>}"},
+		{ "trigger": "SMALLR OF\tmath", "contents": "SMALLR OF ${1:<x>} AN ${2:<y>}"},
+
+		{ "trigger": "BOTH OF\tbool", "contents": "BOTH OF ${1:<x>} AN ${2:<y>}"},
+		{ "trigger": "EITHER OF\tbool", "contents": "EITHER OF ${1:<x>} AN ${2:<y>}"},
+		{ "trigger": "WON OF\tbool", "contents": "WON OF ${1:<x>} AN ${2:<y>}"},
+		{ "trigger": "NOT\tbool", "contents": "NOT ${1:<x>}"},
+		{ "trigger": "ALL OF\tbool", "contents": "ALL OF ${1:<x>} AN ${2:<y>}"},
+		{ "trigger": "ANY OF\tbool", "contents": "ANY OF ${1:<x>} AN ${2:<y>}"},
+
+		{ "trigger": "BOTH SAEM\tcomparison", "contents": "BOTH SAEM ${1:<x>} AN ${2:<y>}"},
+		{ "trigger": "DIFFRINT\tcomparison", "contents": "DIFFRINT ${1:<x>} AN ${2:<y>}"},
+
+		{ "trigger": "SMOOSH MKAY\tconcat", "contents": "SMOOSH ${1:...} MKAY"},
+
+		{ "trigger": "MAEK\tcast", "contents": "MAEK ${1:VAR} A ${2:TYPE}"},
+
+		{ "trigger": "O RLY?\tif-then", "contents": "${1:<expression>}\nO RLY?\n\tYA RLY\n\t\t${2:<code block>}\n\tNO WAI\n\t\t${3:<code block>}\nOIC"},
+		{ "trigger": "WTF?\tswitch", "contents": "${1:VAR}, WTF?\n\tOMG ${2:VAL}\n\t\t${3:<code block>}\n\tOMGWTF\n\t\t${4:<code block>}\nOIC"},
+		{ "trigger": "IM IN YR\tloop", "contents": "IM IN YR ${1:<label>} ${2:UPPIN/NERFIN} YR ${3:<param 1>} AN YR ${4:<param 2>} ${5:TIL/WILE} ${6:<expression>}\n\t${7:<code block>}\nIM OUTTA YR ${1}"},
+		{ "trigger": "HOW IZ I\tfunction", "contents": "HOW IZ I ${1:<function name>} YR ${2:<arg 1>} AN YR ${3:<arg 2>}\n\t${4:<code block>}\nIF U SAY SO"},
+		{ "trigger": "FOUND YR\treturn", "contents": "FOUND YR ${1:VAL}"},
+		{ "trigger": "I IZ\tcall", "contents": "I IZ ${1:<function name>} YR ${2:<param 1>} AN YR ${3:<param 2>} MKAY"},
+
+	]
+}
